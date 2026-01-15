@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Visualization – Nurul Zahirah’s Portfolio</title>
+<title>Capstone Project: ESG Data Automation Platform – Nurul Zahirah’s Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,11 +95,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./capstone-project.html"> 
+    <a class="nav-link active" href="./capstone-project.html" aria-current="page"> 
 <span class="menu-text">Capstone Project (2023)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./data-visualization.html" aria-current="page"> 
+    <a class="nav-link" href="./data-visualization.html"> 
 <span class="menu-text">Data Visualization</span></a>
   </li>  
   <li class="nav-item">
@@ -122,16 +122,40 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#intermodal-transfer-analysis-bus-coverage-around-mrt-stations" id="toc-intermodal-transfer-analysis-bus-coverage-around-mrt-stations" class="nav-link active" data-scroll-target="#intermodal-transfer-analysis-bus-coverage-around-mrt-stations">Intermodal Transfer Analysis: Bus Coverage Around MRT Stations</a>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#background-and-motivation" id="toc-background-and-motivation" class="nav-link" data-scroll-target="#background-and-motivation">Background and Motivation</a></li>
+  <li><a href="#project-objectives" id="toc-project-objectives" class="nav-link" data-scroll-target="#project-objectives">Project Objectives</a></li>
+  <li><a href="#technologies-and-tools-used" id="toc-technologies-and-tools-used" class="nav-link" data-scroll-target="#technologies-and-tools-used">Technologies and Tools Used</a>
   <ul class="collapse">
-  <li><a href="#what-was-visualized" id="toc-what-was-visualized" class="nav-link" data-scroll-target="#what-was-visualized">What Was Visualized</a></li>
-  <li><a href="#the-story-behind-it" id="toc-the-story-behind-it" class="nav-link" data-scroll-target="#the-story-behind-it">The Story Behind It</a></li>
-  <li><a href="#why-this-visualization-approach" id="toc-why-this-visualization-approach" class="nav-link" data-scroll-target="#why-this-visualization-approach">Why This Visualization Approach?</a></li>
-  <li><a href="#technical-implementation" id="toc-technical-implementation" class="nav-link" data-scroll-target="#technical-implementation">Technical Implementation</a></li>
-  <li><a href="#key-insights-discovered" id="toc-key-insights-discovered" class="nav-link" data-scroll-target="#key-insights-discovered">Key Insights Discovered</a></li>
-  <li><a href="#real-world-applications" id="toc-real-world-applications" class="nav-link" data-scroll-target="#real-world-applications">Real-World Applications</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#core-technologies" id="toc-core-technologies" class="nav-link" data-scroll-target="#core-technologies">Core Technologies</a></li>
+  <li><a href="#technical-architecture" id="toc-technical-architecture" class="nav-link" data-scroll-target="#technical-architecture">Technical Architecture</a></li>
   </ul></li>
+  <li><a href="#key-features-implemented" id="toc-key-features-implemented" class="nav-link" data-scroll-target="#key-features-implemented">Key Features Implemented</a>
+  <ul class="collapse">
+  <li><a href="#automated-data-extraction" id="toc-automated-data-extraction" class="nav-link" data-scroll-target="#automated-data-extraction">1. Automated Data Extraction</a></li>
+  <li><a href="#data-transformation-pipeline" id="toc-data-transformation-pipeline" class="nav-link" data-scroll-target="#data-transformation-pipeline">2. Data Transformation Pipeline</a></li>
+  <li><a href="#quality-assurance-checks" id="toc-quality-assurance-checks" class="nav-link" data-scroll-target="#quality-assurance-checks">3. Quality Assurance Checks</a></li>
+  <li><a href="#error-handling-and-logging" id="toc-error-handling-and-logging" class="nav-link" data-scroll-target="#error-handling-and-logging">4. Error Handling and Logging</a></li>
+  </ul></li>
+  <li><a href="#challenges-and-solutions" id="toc-challenges-and-solutions" class="nav-link" data-scroll-target="#challenges-and-solutions">Challenges and Solutions</a>
+  <ul class="collapse">
+  <li><a href="#challenge-1-inconsistent-data-formats" id="toc-challenge-1-inconsistent-data-formats" class="nav-link" data-scroll-target="#challenge-1-inconsistent-data-formats">Challenge 1: Inconsistent Data Formats</a></li>
+  <li><a href="#challenge-2-pdf-data-extraction-accuracy" id="toc-challenge-2-pdf-data-extraction-accuracy" class="nav-link" data-scroll-target="#challenge-2-pdf-data-extraction-accuracy">Challenge 2: PDF Data Extraction Accuracy</a></li>
+  <li><a href="#challenge-3-system-integration" id="toc-challenge-3-system-integration" class="nav-link" data-scroll-target="#challenge-3-system-integration">Challenge 3: System Integration</a></li>
+  </ul></li>
+  <li><a href="#results-and-impact" id="toc-results-and-impact" class="nav-link" data-scroll-target="#results-and-impact">Results and Impact</a>
+  <ul class="collapse">
+  <li><a href="#quantifiable-achievements" id="toc-quantifiable-achievements" class="nav-link" data-scroll-target="#quantifiable-achievements">Quantifiable Achievements</a></li>
+  <li><a href="#qualitative-benefits" id="toc-qualitative-benefits" class="nav-link" data-scroll-target="#qualitative-benefits">Qualitative Benefits</a></li>
+  </ul></li>
+  <li><a href="#technical-learning-outcomes" id="toc-technical-learning-outcomes" class="nav-link" data-scroll-target="#technical-learning-outcomes">Technical Learning Outcomes</a>
+  <ul class="collapse">
+  <li><a href="#skills-developed" id="toc-skills-developed" class="nav-link" data-scroll-target="#skills-developed">Skills Developed</a></li>
+  <li><a href="#professional-growth" id="toc-professional-growth" class="nav-link" data-scroll-target="#professional-growth">Professional Growth</a></li>
+  </ul></li>
+  <li><a href="#real-world-application" id="toc-real-world-application" class="nav-link" data-scroll-target="#real-world-application">Real-World Application</a></li>
+  <li><a href="#future-enhancements" id="toc-future-enhancements" class="nav-link" data-scroll-target="#future-enhancements">Future Enhancements</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -140,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Visualization</h1>
+<h1 class="title">Capstone Project: ESG Data Automation Platform</h1>
 </div>
 
 
@@ -157,63 +181,197 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="intermodal-transfer-analysis-bus-coverage-around-mrt-stations" class="level2">
-<h2 class="anchored" data-anchor-id="intermodal-transfer-analysis-bus-coverage-around-mrt-stations">Intermodal Transfer Analysis: Bus Coverage Around MRT Stations</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="datavisualisation.png" class="img-fluid figure-img"></p>
-<figcaption>Intermodal Transfer Analysis Dashboard</figcaption>
-</figure>
-</div>
-<section id="what-was-visualized" class="level3">
-<h3 class="anchored" data-anchor-id="what-was-visualized">What Was Visualized</h3>
-<p>This interactive dashboard analyzes the integration between Singapore’s MRT (Mass Rapid Transit) and bus network systems. The visualization displays:</p>
-<p><strong>Geographic data</strong>: Interactive map showing the spatial distribution of bus stops around a selected MRT station</p>
-<p><strong>Key metrics displayed</strong>: <br> Number of bus stops within a specified search radius (16 stops) <br> Number of unique bus services available (50 services) <br> Search radius parameter (adjustable from 200m to 1000m, currently set at 550m)</p>
-<p><strong>Visual elements</strong>: <br> Blue markers representing individual bus stops <br> Red marker indicating the selected MRT station (Ang Mo Kio MRT) <br> Red circle showing the search radius coverage area <br> Base map with street-level detail for context</p>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>During my diploma studies at Temasek Polytechnic, I developed an automated data extraction and processing workflow for an ESG (Environmental, Social, and Governance) compliance platform using UiPath and Alteryx.*</p>
 </section>
-<section id="the-story-behind-it" class="level3">
-<h3 class="anchored" data-anchor-id="the-story-behind-it">The Story Behind It</h3>
-<p><strong>Context</strong>: This project was developed as part of my coursework in Database Systems at Singapore Institute of Technology, where we explored Singapore’s public transport connectivity and accessibility.</p>
-<p><strong>Objective</strong>: To assess the first-mile/last-mile connectivity of Singapore’s public transport system by measuring how well bus services support MRT stations. This analysis helps identify: <br> Areas with strong intermodal integration <br> Potential gaps in feeder bus coverage <br> Optimal transfer points for commuters</p>
-<p><strong>Problem Statement</strong>: Commuters often need to use multiple transport modes to complete their journeys. Understanding the density and variety of bus services around MRT stations is crucial for: <br> Urban transport planning <br> Evaluating accessibility for residents <br> Optimizing feeder bus routes</p>
+<section id="background-and-motivation" class="level2">
+<h2 class="anchored" data-anchor-id="background-and-motivation">Background and Motivation</h2>
+<p>Environmental, Social, and Governance (ESG) reporting has become increasingly critical for organizations to demonstrate their commitment to sustainable practices. However, ESG data collection is often: - <strong>Manual and time-consuming</strong>: Extracting data from multiple sources and formats - <strong>Error-prone</strong>: Human data entry mistakes affecting accuracy - <strong>Inconsistent</strong>: Different data formats across various reporting systems - <strong>Resource-intensive</strong>: Taking up valuable analyst time that could be spent on insights</p>
 </section>
-<section id="why-this-visualization-approach" class="level3">
-<h3 class="anchored" data-anchor-id="why-this-visualization-approach">Why This Visualization Approach?</h3>
-<p>I chose this combination of interactive map and summary metrics because:</p>
-<p><strong>Geographic context is essential</strong>: Transport connectivity is inherently spatial - showing the physical distribution of bus stops reveals coverage patterns that numbers alone cannot convey</p>
-<p><strong>Interactive exploration</strong>: The dropdown selector and adjustable search radius allow users to: <br> Compare different MRT stations <br> Test various walking distance assumptions (200m to 1km) <br> Discover localized patterns specific to each neighborhood</p>
-<p><strong>Quantitative metrics provide clarity</strong>: The key performance indicators (16 bus stops, 50 unique services) give immediate numerical context to the visual patterns</p>
-<p><strong>Layered information hierarchy</strong>: The design presents information in progressive detail: <br> High-level summary cards for quick insights <br> Map visualization for spatial understanding <br> Individual markers for granular exploration</p>
+<section id="project-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="project-objectives">Project Objectives</h2>
+<p>The primary goal was to streamline ESG data management by:</p>
+<ol type="1">
+<li><strong>Automating data extraction</strong> from multiple sources (Excel spreadsheets, PDFs, web portals)</li>
+<li><strong>Standardizing data formats</strong> across different reporting frameworks (GRI, SASB, TCFD)</li>
+<li><strong>Validating data quality</strong> with automated error checking and flagging</li>
+<li><strong>Reducing processing time</strong> from days to hours</li>
+<li><strong>Improving accuracy</strong> by minimizing manual data entry</li>
+</ol>
 </section>
-<section id="technical-implementation" class="level3">
-<h3 class="anchored" data-anchor-id="technical-implementation">Technical Implementation</h3>
-<p><strong>Data Sources</strong>: <br> LTA DataMall API: Real-time bus stop locations and service information <br> OneMap API: MRT station coordinates <br> OpenStreetMap: Base map tiles</p>
-<p><strong>Tools &amp; Technologies</strong>: <br> <strong>Python</strong>: Data processing and API integration <br> <strong>Pandas</strong>: Data manipulation and cleaning <br> <strong>Folium/Leaflet.js</strong>: Interactive map visualization <br> <strong>Streamlit/Dash</strong>: Web application framework <br> <strong>Geopy</strong>: Geospatial distance calculations</p>
-<p><strong>Key Technical Challenges</strong>: <br> Handling large datasets (thousands of bus stops across Singapore) <br> Calculating accurate geodesic distances on Earth’s curved surface <br> Optimizing map rendering performance for smooth user interaction <br> Ensuring data accuracy and real-time synchronization with LTA systems</p>
+<section id="technologies-and-tools-used" class="level2">
+<h2 class="anchored" data-anchor-id="technologies-and-tools-used">Technologies and Tools Used</h2>
+<section id="core-technologies" class="level3">
+<h3 class="anchored" data-anchor-id="core-technologies">Core Technologies</h3>
+<ul>
+<li><strong>UiPath</strong>: Robotic Process Automation (RPA) platform for workflow automation</li>
+<li><strong>Alteryx</strong>: Data preparation and blending tool for ETL processes</li>
+<li><strong>Python</strong>: Custom scripting for data validation and transformation</li>
+<li><strong>Power BI</strong>: Dashboard creation for data visualization and insights</li>
+<li><strong>Microsoft Excel</strong>: Data source and validation interface</li>
+</ul>
 </section>
-<section id="key-insights-discovered" class="level3">
-<h3 class="anchored" data-anchor-id="key-insights-discovered">Key Insights Discovered</h3>
-<p>From analyzing multiple MRT stations:</p>
-<p><strong>Central stations have higher coverage</strong>: Stations in mature estates like Ang Mo Kio, Bishan, and Tampines show 40-60 unique bus services within 550m</p>
-<p><strong>Search radius impact</strong>: Increasing the search radius from 200m to 550m typically doubles the number of accessible bus services, but beyond 800m, the rate of increase slows significantly</p>
-<p><strong>Network hub identification</strong>: Certain stations (like Ang Mo Kio in this example) serve as major interchange points with extensive feeder networks</p>
-<p><strong>Coverage disparities</strong>: Newer MRT stations in developing areas may have fewer bus connections, highlighting areas for transport planning attention</p>
+<section id="technical-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="technical-architecture">Technical Architecture</h3>
+<pre><code>Data Sources → UiPath (Extraction) → Alteryx (Transformation) → Database → Power BI (Visualization)</code></pre>
 </section>
-<section id="real-world-applications" class="level3">
-<h3 class="anchored" data-anchor-id="real-world-applications">Real-World Applications</h3>
-<p>This analysis framework can be used for:</p>
-<p><strong>Transport planning</strong>: Identifying areas requiring additional feeder bus services <br> <strong>Property development</strong>: Assessing transport connectivity for new residential projects <br> <strong>Commuter apps</strong>: Helping users find optimal transfer points <br> <strong>Research</strong>: Studying the evolution of Singapore’s integrated transport network</p>
 </section>
-<section id="reflection" class="level3">
-<h3 class="anchored" data-anchor-id="reflection">Reflection</h3>
-<p>This project taught me the importance of combining multiple visualization techniques - quantitative metrics, geographic representation, and interactive elements - to tell a complete story. The key learning was that effective data visualization isn’t just about displaying data; it’s about enabling users to explore and derive their own insights.</p>
-<p>The interactive nature of this dashboard allows different stakeholders (urban planners, researchers, commuters) to use the same tool for different purposes, demonstrating the power of flexible, user-driven visualization design.</p>
+<section id="key-features-implemented" class="level2">
+<h2 class="anchored" data-anchor-id="key-features-implemented">Key Features Implemented</h2>
+<section id="automated-data-extraction" class="level3">
+<h3 class="anchored" data-anchor-id="automated-data-extraction">1. Automated Data Extraction</h3>
+<ul>
+<li>Built UiPath robots to extract data from:
+<ul>
+<li>PDF sustainability reports</li>
+<li>Excel templates from different departments</li>
+<li>Web-based ESG disclosure platforms</li>
+<li>Email attachments from stakeholders</li>
+</ul></li>
+</ul>
+</section>
+<section id="data-transformation-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="data-transformation-pipeline">2. Data Transformation Pipeline</h3>
+<ul>
+<li>Created Alteryx workflows to:
+<ul>
+<li>Standardize different date formats (DD/MM/YYYY, MM-DD-YY, etc.)</li>
+<li>Convert units (metric tons to kg, kWh to MWh)</li>
+<li>Map data to appropriate ESG frameworks</li>
+<li>Handle missing or incomplete data</li>
+</ul></li>
+</ul>
+</section>
+<section id="quality-assurance-checks" class="level3">
+<h3 class="anchored" data-anchor-id="quality-assurance-checks">3. Quality Assurance Checks</h3>
+<ul>
+<li>Implemented validation rules:
+<ul>
+<li>Numeric range checks (e.g., energy consumption within expected bounds)</li>
+<li>Completeness verification (all required fields populated)</li>
+<li>Cross-referencing with previous period data for anomaly detection</li>
+<li>Duplicate entry identification</li>
+</ul></li>
+</ul>
+</section>
+<section id="error-handling-and-logging" class="level3">
+<h3 class="anchored" data-anchor-id="error-handling-and-logging">4. Error Handling and Logging</h3>
+<ul>
+<li>Built robust error management:
+<ul>
+<li>Exception handling for missing files or inaccessible sources</li>
+<li>Detailed logging of all automation steps</li>
+<li>Email notifications for critical failures</li>
+<li>Manual intervention queue for complex cases</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="challenges-and-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-and-solutions">Challenges and Solutions</h2>
+<section id="challenge-1-inconsistent-data-formats" class="level3">
+<h3 class="anchored" data-anchor-id="challenge-1-inconsistent-data-formats">Challenge 1: Inconsistent Data Formats</h3>
+<p><strong>Problem</strong>: Different departments submitted ESG data in varying formats, making standardization difficult.</p>
+<p><strong>Solution</strong>: - Created comprehensive data mapping templates - Developed Alteryx workflows with dynamic field recognition - Implemented fuzzy matching for similar-but-not-identical field names - Built validation layer to flag non-standard formats for manual review</p>
+</section>
+<section id="challenge-2-pdf-data-extraction-accuracy" class="level3">
+<h3 class="anchored" data-anchor-id="challenge-2-pdf-data-extraction-accuracy">Challenge 2: PDF Data Extraction Accuracy</h3>
+<p><strong>Problem</strong>: UiPath’s OCR struggled with scanned PDFs and complex table layouts.</p>
+<p><strong>Solution</strong>: - Implemented multiple extraction strategies (native PDF reading vs.&nbsp;OCR) - Used anchor-based extraction for structured tables - Added post-extraction validation by cross-checking totals - Created manual review process for low-confidence extractions</p>
+</section>
+<section id="challenge-3-system-integration" class="level3">
+<h3 class="anchored" data-anchor-id="challenge-3-system-integration">Challenge 3: System Integration</h3>
+<p><strong>Problem</strong>: Connecting UiPath, Alteryx, and the company’s database systems securely.</p>
+<p><strong>Solution</strong>: - Used API connections where available - Implemented secure file transfer protocols - Created intermediate staging database for data handoffs - Established clear data governance and access controls</p>
+</section>
+</section>
+<section id="results-and-impact" class="level2">
+<h2 class="anchored" data-anchor-id="results-and-impact">Results and Impact</h2>
+<section id="quantifiable-achievements" class="level3">
+<h3 class="anchored" data-anchor-id="quantifiable-achievements">Quantifiable Achievements</h3>
+<ul>
+<li><strong>80% reduction in processing time</strong>: What took 2-3 days now completes in 4-6 hours</li>
+<li><strong>95%+ accuracy rate</strong>: Automated validation reduced data entry errors significantly</li>
+<li><strong>500+ hours saved annually</strong>: Freed analysts to focus on insights rather than data collection</li>
+<li><strong>Scalability</strong>: System handles 3x more data sources without additional staff</li>
+</ul>
+</section>
+<section id="qualitative-benefits" class="level3">
+<h3 class="anchored" data-anchor-id="qualitative-benefits">Qualitative Benefits</h3>
+<ul>
+<li><strong>Improved data quality</strong>: Consistent formatting and validation rules</li>
+<li><strong>Faster reporting cycles</strong>: Ability to generate ESG reports on-demand</li>
+<li><strong>Better audit trail</strong>: Complete logging of data lineage and transformations</li>
+<li><strong>Enhanced stakeholder confidence</strong>: More reliable and timely ESG disclosures</li>
+</ul>
+</section>
+</section>
+<section id="technical-learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="technical-learning-outcomes">Technical Learning Outcomes</h2>
+<section id="skills-developed" class="level3">
+<h3 class="anchored" data-anchor-id="skills-developed">Skills Developed</h3>
+<ol type="1">
+<li><strong>RPA Development</strong>: Mastered UiPath Studio, including:
+<ul>
+<li>Sequence and flowchart design</li>
+<li>Exception handling and logging</li>
+<li>Orchestrator deployment and monitoring</li>
+</ul></li>
+<li><strong>ETL Pipeline Design</strong>: Gained expertise in:
+<ul>
+<li>Data extraction from diverse sources</li>
+<li>Complex transformation logic</li>
+<li>Load optimization strategies</li>
+</ul></li>
+<li><strong>Process Analysis</strong>: Learned to:
+<ul>
+<li>Map current-state business processes</li>
+<li>Identify automation opportunities</li>
+<li>Design future-state optimized workflows</li>
+</ul></li>
+<li><strong>Project Management</strong>: Experienced:
+<ul>
+<li>Stakeholder communication and requirements gathering</li>
+<li>Agile development methodology</li>
+<li>Testing and UAT coordination</li>
+</ul></li>
+</ol>
+</section>
+<section id="professional-growth" class="level3">
+<h3 class="anchored" data-anchor-id="professional-growth">Professional Growth</h3>
+<p>This project taught me valuable lessons about: - The importance of thorough documentation - Balancing automation with human oversight - Managing stakeholder expectations - Iterative development and continuous improvement</p>
+</section>
+</section>
+<section id="real-world-application" class="level2">
+<h2 class="anchored" data-anchor-id="real-world-application">Real-World Application</h2>
+<p>The skills and knowledge gained from this project directly apply to:</p>
+<ul>
+<li><strong>Fintech compliance</strong>: Automating regulatory reporting for financial institutions</li>
+<li><strong>Data analytics</strong>: Building robust data pipelines for analytical workloads</li>
+<li><strong>Business process optimization</strong>: Identifying and automating repetitive tasks</li>
+<li><strong>ESG technology</strong>: Contributing to the growing field of sustainability technology</li>
+</ul>
+</section>
+<section id="future-enhancements" class="level2">
+<h2 class="anchored" data-anchor-id="future-enhancements">Future Enhancements</h2>
+<p>If I were to continue this project, I would explore:</p>
+<ol type="1">
+<li><strong>Machine Learning Integration</strong>: Use ML to predict missing data points based on historical patterns</li>
+<li><strong>Natural Language Processing</strong>: Extract ESG metrics from unstructured text in reports</li>
+<li><strong>Real-time Monitoring</strong>: Implement continuous data feeds rather than batch processing</li>
+<li><strong>Blockchain for Transparency</strong>: Use distributed ledger for immutable ESG data records</li>
+</ol>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This capstone project was instrumental in shaping my career path toward fintech and data analytics. It demonstrated how technology can transform traditional business processes and create measurable value.</p>
+<p>The experience of working with real stakeholders, managing real data, and delivering real business impact was invaluable. It prepared me for the challenges of professional data analytics work and reinforced my passion for using technology to solve practical business problems.</p>
+<p>Most importantly, it taught me that successful automation isn’t just about technology - it’s about understanding the business context, working with people, and continuously improving based on feedback.</p>
 <hr>
-<p><em>This visualization was created as part of my Data Engineering &amp; Visualization coursework, demonstrating the application of geospatial analysis and interactive dashboard design to real-world urban transport challenges.</em></p>
+<p><em>This project was completed during my internship at KPMG Singapore as part of my Diploma in Accountancy and Finance at Temasek Polytechnic. It represents the culmination of my accounting background, technical skills development, and interest in process automation.</em></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
