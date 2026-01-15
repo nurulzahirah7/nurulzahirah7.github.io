@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nurul Zahirah’s Portfolio",
+    "section": "",
+    "text": "Hi, I’m Nurul Zahirah, a penultimate year student pursuing BSc (Hons) in Applied Computing (Fintech) at Singapore Institute of Technology.\n\n\nI’m passionate about data analytics, fintech innovation, and leveraging technology to solve real-world problems. Currently, I’m interning at Singapore Airlines, working with AI systems and data science.\n\n\n\n\nData Analytics: Experienced with Python, SQL, Alteryx, and Power BI\nFintech: Building solutions at the intersection of finance and technology\nAutomation: Creating efficient workflows with UiPath and RPA\n\n\n\n\n\nData Analyst Intern at KPMG Singapore - Achieved 80% efficiency improvements through Alteryx automation\nData Science Intern at Singapore Airlines - Worked on AI systems and data analytics\n\n\n\n\nHere is my Favourite Photo taken in 2025, location: Great Ocean Road, Melbourne\n\n\nFeel free to explore my projects and visualizations!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "temp_website",
+    "section": "",
+    "text": "website: title: “Nurul Zahirah’s Portfolio” navbar: left: - href: index.qmd text: Home - href: capstone-project.qmd text: Capstone Project - href: data-visualization.qmd text: Data Visualization"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Nurul Zahirah’s Portfolio",
+    "section": "",
+    "text": "Hi, I’m Nurul Zahirah, a penultimate year student pursuing BSc (Hons) in Applied Computing (Fintech) at Singapore Institute of Technology.\n\n\nI’m passionate about data analytics, fintech innovation, and leveraging technology to solve real-world problems. Currently, I’m interning at Singapore Airlines, working with AI systems and data science.\n\n\n\n\nData Analytics: Experienced with Python, SQL, Alteryx, and Power BI\nFintech: Building solutions at the intersection of finance and technology\nAutomation: Creating efficient workflows with UiPath and RPA\n\n\n\n\n\nData Analyst Intern at KPMG Singapore - Achieved 80% efficiency improvements through Alteryx automation\nData Science Intern at Singapore Airlines - Worked on AI systems and data analytics\n\n\n\n\nHere is my Favourite Photo taken in 2025, location: Great Ocean Road, Melbourne\n\n\nFeel free to explore my projects and visualizations!"
+  }
+]
