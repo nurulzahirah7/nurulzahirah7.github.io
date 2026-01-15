@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>about – Nurul Zahirah's Portfolio</title>
+<title>Data Visualization – Nurul Zahirah’s Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,12 +95,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./capstone-project.qmd"> 
-<span class="menu-text">Capstone Project</span></a>
+    <a class="nav-link" href="./capstone-project.html"> 
+<span class="menu-text">Capstone Project (2023)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./data-visualization.html"> 
+    <a class="nav-link active" href="./data-visualization.html" aria-current="page"> 
 <span class="menu-text">Data Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./reflection.html"> 
+<span class="menu-text">Reflection on GenAI</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -113,18 +117,130 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#intermodal-transfer-analysis-bus-coverage-around-mrt-stations" id="toc-intermodal-transfer-analysis-bus-coverage-around-mrt-stations" class="nav-link active" data-scroll-target="#intermodal-transfer-analysis-bus-coverage-around-mrt-stations">Intermodal Transfer Analysis: Bus Coverage Around MRT Stations</a>
+  <ul class="collapse">
+  <li><a href="#what-was-visualized" id="toc-what-was-visualized" class="nav-link" data-scroll-target="#what-was-visualized">What Was Visualized</a></li>
+  <li><a href="#the-story-behind-it" id="toc-the-story-behind-it" class="nav-link" data-scroll-target="#the-story-behind-it">The Story Behind It</a></li>
+  <li><a href="#why-this-visualization-approach" id="toc-why-this-visualization-approach" class="nav-link" data-scroll-target="#why-this-visualization-approach">Why This Visualization Approach?</a></li>
+  <li><a href="#technical-implementation" id="toc-technical-implementation" class="nav-link" data-scroll-target="#technical-implementation">Technical Implementation</a></li>
+  <li><a href="#key-insights-discovered" id="toc-key-insights-discovered" class="nav-link" data-scroll-target="#key-insights-discovered">Key Insights Discovered</a></li>
+  <li><a href="#real-world-applications" id="toc-real-world-applications" class="nav-link" data-scroll-target="#real-world-applications">Real-World Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Visualization</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p>website: title: “Nurul Zahirah’s Portfolio” navbar: left: - href: index.qmd text: Home - href: capstone-project.qmd text: Capstone Project - href: data-visualization.qmd text: Data Visualization</p>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="intermodal-transfer-analysis-bus-coverage-around-mrt-stations" class="level2">
+<h2 class="anchored" data-anchor-id="intermodal-transfer-analysis-bus-coverage-around-mrt-stations">Intermodal Transfer Analysis: Bus Coverage Around MRT Stations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="datavisualisation.png" class="img-fluid figure-img"></p>
+<figcaption>Intermodal Transfer Analysis Dashboard</figcaption>
+</figure>
+</div>
+<section id="what-was-visualized" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-visualized">What Was Visualized</h3>
+<p>This interactive dashboard analyzes the integration between Singapore’s MRT (Mass Rapid Transit) and bus network systems. The visualization displays:</p>
+<ul>
+<li><strong>Geographic data</strong>: Interactive map showing the spatial distribution of bus stops around a selected MRT station</li>
+<li><strong>Key metrics displayed</strong>:
+<ul>
+<li>Number of bus stops within a specified search radius (16 stops)</li>
+<li>Number of unique bus services available (50 services)</li>
+<li>Search radius parameter (adjustable from 200m to 1000m, currently set at 550m)</li>
+</ul></li>
+<li><strong>Visual elements</strong>:
+<ul>
+<li>Blue markers representing individual bus stops</li>
+<li>Red marker indicating the selected MRT station (Ang Mo Kio MRT)</li>
+<li>Red circle showing the search radius coverage area</li>
+<li>Base map with street-level detail for context</li>
+</ul></li>
+</ul>
+</section>
+<section id="the-story-behind-it" class="level3">
+<h3 class="anchored" data-anchor-id="the-story-behind-it">The Story Behind It</h3>
+<p><strong>Context</strong>: This project was developed as part of my coursework in Data Engineering &amp; Visualization at Singapore Institute of Technology, where we explored Singapore’s public transport connectivity and accessibility.</p>
+<p><strong>Objective</strong>: To assess the first-mile/last-mile connectivity of Singapore’s public transport system by measuring how well bus services support MRT stations. This analysis helps identify: - Areas with strong intermodal integration - Potential gaps in feeder bus coverage - Optimal transfer points for commuters</p>
+<p><strong>Problem Statement</strong>: Commuters often need to use multiple transport modes to complete their journeys. Understanding the density and variety of bus services around MRT stations is crucial for: - Urban transport planning - Evaluating accessibility for residents - Optimizing feeder bus routes</p>
+</section>
+<section id="why-this-visualization-approach" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-visualization-approach">Why This Visualization Approach?</h3>
+<p>I chose this combination of interactive map and summary metrics because:</p>
+<ol type="1">
+<li><p><strong>Geographic context is essential</strong>: Transport connectivity is inherently spatial - showing the physical distribution of bus stops reveals coverage patterns that numbers alone cannot convey</p></li>
+<li><p><strong>Interactive exploration</strong>: The dropdown selector and adjustable search radius allow users to:</p>
+<ul>
+<li>Compare different MRT stations</li>
+<li>Test various walking distance assumptions (200m to 1km)</li>
+<li>Discover localized patterns specific to each neighborhood</li>
+</ul></li>
+<li><p><strong>Quantitative metrics provide clarity</strong>: The key performance indicators (16 bus stops, 50 unique services) give immediate numerical context to the visual patterns</p></li>
+<li><p><strong>Layered information hierarchy</strong>: The design presents information in progressive detail:</p>
+<ul>
+<li>High-level summary cards for quick insights</li>
+<li>Map visualization for spatial understanding</li>
+<li>Individual markers for granular exploration</li>
+</ul></li>
+</ol>
+</section>
+<section id="technical-implementation" class="level3">
+<h3 class="anchored" data-anchor-id="technical-implementation">Technical Implementation</h3>
+<p><strong>Data Sources</strong>: - LTA DataMall API: Real-time bus stop locations and service information - OneMap API: MRT station coordinates - OpenStreetMap: Base map tiles</p>
+<p><strong>Tools &amp; Technologies</strong>: - <strong>Python</strong>: Data processing and API integration - <strong>Pandas</strong>: Data manipulation and cleaning - <strong>Folium/Leaflet.js</strong>: Interactive map visualization - <strong>Streamlit/Dash</strong>: Web application framework (if applicable) - <strong>Geopy</strong>: Geospatial distance calculations</p>
+<p><strong>Key Technical Challenges</strong>: - Handling large datasets (thousands of bus stops across Singapore) - Calculating accurate geodesic distances on Earth’s curved surface - Optimizing map rendering performance for smooth user interaction - Ensuring data accuracy and real-time synchronization with LTA systems</p>
+</section>
+<section id="key-insights-discovered" class="level3">
+<h3 class="anchored" data-anchor-id="key-insights-discovered">Key Insights Discovered</h3>
+<p>From analyzing multiple MRT stations:</p>
+<ol type="1">
+<li><p><strong>Central stations have higher coverage</strong>: Stations in mature estates like Ang Mo Kio, Bishan, and Tampines show 40-60 unique bus services within 550m</p></li>
+<li><p><strong>Search radius impact</strong>: Increasing the search radius from 200m to 550m typically doubles the number of accessible bus services, but beyond 800m, the rate of increase slows significantly</p></li>
+<li><p><strong>Network hub identification</strong>: Certain stations (like Ang Mo Kio in this example) serve as major interchange points with extensive feeder networks</p></li>
+<li><p><strong>Coverage disparities</strong>: Newer MRT stations in developing areas may have fewer bus connections, highlighting areas for transport planning attention</p></li>
+</ol>
+</section>
+<section id="real-world-applications" class="level3">
+<h3 class="anchored" data-anchor-id="real-world-applications">Real-World Applications</h3>
+<p>This analysis framework can be used for: - <strong>Transport planning</strong>: Identifying areas requiring additional feeder bus services - <strong>Property development</strong>: Assessing transport connectivity for new residential projects - <strong>Commuter apps</strong>: Helping users find optimal transfer points - <strong>Research</strong>: Studying the evolution of Singapore’s integrated transport network</p>
+</section>
+<section id="reflection" class="level3">
+<h3 class="anchored" data-anchor-id="reflection">Reflection</h3>
+<p>This project taught me the importance of combining multiple visualization techniques - quantitative metrics, geographic representation, and interactive elements - to tell a complete story. The key learning was that effective data visualization isn’t just about displaying data; it’s about enabling users to explore and derive their own insights.</p>
+<p>The interactive nature of this dashboard allows different stakeholders (urban planners, researchers, commuters) to use the same tool for different purposes, demonstrating the power of flexible, user-driven visualization design.</p>
+<hr>
+<p><em>This visualization was created as part of my Data Engineering &amp; Visualization coursework, demonstrating the application of geospatial analysis and interactive dashboard design to real-world urban transport challenges.</em></p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
