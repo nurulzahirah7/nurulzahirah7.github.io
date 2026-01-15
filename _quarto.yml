@@ -8,8 +8,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
+      - href: capstone-project.qmd
+        text: Capstone Project (2023)
       - href: data-visualization.qmd
         text: Data Visualization
       - href: reflection.qmd
