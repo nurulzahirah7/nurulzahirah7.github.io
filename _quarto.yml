@@ -3,21 +3,16 @@ project:
   output-dir: docs
 
 website:
-  title: "temp_website"
+  title: "Nurul Zahirah's Portfolio"
   navbar:
-    logo: logo.png
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: data-visualization.qmd
+        text: Data Visualization
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-    toc-depth: 3
-    toc-location: left
-
-
-
