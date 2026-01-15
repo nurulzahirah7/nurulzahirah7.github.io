@@ -1,9 +1,10 @@
----
-title: "About"
----
-
-About this site
-
-```{r}
-1 + 1
-```
+website:
+  title: "Nurul Zahirah's Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: capstone-project.qmd
+        text: Capstone Project
+      - href: data-visualization.qmd
+        text: Data Visualization
