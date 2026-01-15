@@ -8,8 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: About
       - href: data-visualization.qmd
         text: Data Visualization
+      - href: reflection.qmd
+        text: Reflection on GenAI
 
 format:
   html:
