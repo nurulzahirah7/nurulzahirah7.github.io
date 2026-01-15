@@ -1,9 +1,26 @@
 ---
-title: "About"
+title: "Zahirah's Portfolio"
 ---
 
-About this site
+## Welcome! 👋
 
-```{r}
-1 + 1
-```
+Hi, I'm Zahirah, a penultimate year student pursuing BSc (Hons) in Applied Computing (Fintech) at Singapore Institute of Technology.
+
+### About Me
+
+I'm passionate about data analytics, fintech innovation, and leveraging technology to solve real-world problems. Currently, I'm interning at Singapore Airlines, working with AI systems and data science.
+
+### My Interests
+
+- **Data Analytics**: Experienced with Python, SQL, Alteryx, and Power BI
+- **Fintech**: Building solutions at the intersection of finance and technology
+- **Automation**: Creating efficient workflows with UiPath and RPA
+
+### Experience Highlights
+
+- **Data Analyst Intern** at KPMG Singapore - Achieved 80% efficiency improvements through Alteryx automation
+- **Data Science Intern** at Singapore Airlines - Worked on AI systems and data analytics
+
+![Best Photo of 2025](photo.jpg)
+
+*Feel free to explore my projects and visualizations!*
